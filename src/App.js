@@ -25,7 +25,6 @@ function App() {
   };
 
   const handleDelete = (event) => {
-    console.log(event.target.id);
     const filteredData = todos.filter((todo) => {
       return todo.id !== event.target.id;
     });
