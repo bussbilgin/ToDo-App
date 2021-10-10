@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+  background-image: linear-gradient(130deg, #2560c1 30%, #1a4184 90%);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .todo-form {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    input {
+      width: 500px;
+      height: 50px;
+      font-size: 18px;
+      margin-right: 20px;
+      padding: 0 20px;
+      border: none;
+      border-radius: 8px;
+      color: #333333;
+      background-color: #ffffff;
+
+      @media (max-width: 1024px) {
+        width: 350px;
+      }
+
+      @media (max-width: 767px) {
+        width: 200px;
+        font-size: 15px;
+      }
+    }
+
+    input::placeholder {
+      font-size: 16px;
+      color: #333333;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+
+    input:focus,
+    button:focus {
+      outline: none;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #333333;
+      background-color: #ffffff;
+
+      @media (max-width: 1024px) {
+        width: 100px;
+      }
+
+      @media (max-width: 767px) {
+        width: 70px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .todo-list {
+    min-height: 700px;
+    margin-top: 30px;
+  }
+
+  .sortable-item {
+    cursor: pointer;
+  }
+}
