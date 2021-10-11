@@ -2,13 +2,11 @@ Hello there,
 Welcome to the To-Do App page I developed for creating to-do lists!
 
 I used React.JS and SASS in this project. <br>
-Practiced mobile responsivity and tried to build my folder structure to be scalable.<br>
-This project provides to create a to-do list.<br>
 The tasks created in the to-do list have the feature of sorting by dragging and can be deleted.<br>
 
 ### Resources:
 
-The source library I used for the Drag and Drog feature:
+The source library I used for the Drag and Drop feature:
 [LİNK](https://www.npmjs.com/package/react-easy-sort)
 
 Here is the source library I used so that each created task has a unique id:
